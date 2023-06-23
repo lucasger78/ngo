@@ -1,0 +1,229 @@
+.img-index{
+    width: 20%;
+    height: 20%;
+}
+
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .nav-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    margin-bottom: 5px;
+  }
+  
+  .submenu a {
+    color: #333;
+    text-decoration: none;
+    text-transform: initial;
+  }
+  
+  .submenu a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  .text-footer{
+    opacity: 0.1;
+    color:black;
+    font-size: xx-small;      
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  .data-footer {
+    text-align: center;
+  }
+
+  /* CARRUSEL */
+
+  #carrusel {
+    
+    margin: auto;
+    
+    max-width: 970px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#carrusel>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#carrusel>ul.slider {
+    position: relative;
+    max-width: 970px;
+    width: 100%;
+    height: 670px;
+}
+
+.clients{
+  transform: translate(-10%, -10%);
+}
+
+#carrusel>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#carrusel>ul.slider li img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+#carrusel>ul.slider li:first-child {
+    opacity: 1;
+    
+}
+
+#carrusel>ul.slider li:target {
+    opacity: 1;
+   
+}
+
+#carrusel>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#carrusel>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#carrusel>.menu li a {
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+    width: 5px;
+    height: 5px;
+    font-size: 1px;
+    border-radius: 100%;
+	  opacity: 0.5;
+}
+
+#carrusel>.menu li a:hover {
+    
+	opacity: 1;
+}
+
+#carrusel>.menu li a.active {
+	opacity: 1;
+}
+
+/* carrusel logos */
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  animation: slide 40s linear infinite;
+  width: 500%; 
+  transform: translateX(0%);
+}
+
+.swiper-slide {
+  flex: 0 0 20%; 
+  padding: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-320%); 
+  }
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    width: 115%;
+  }
+  .swiper-slide {
+    flex: 0 0 30%; 
+    padding: 10px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-550%); 
+    }
+  }
+}
+
+/* fin carrusel logos */
+
+/* Estilos generales de la página */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del botón Back to Top */
+.back-to-top {
+  display: none; /* El botón estará oculto inicialmente */
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+  right: 20px; /* Ajusta la distancia desde la parte derecha */
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semi transparente */
+  color: #fff;
+  text-decoration: none;
+  font-size: small;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.back-to-top.show {
+  display: block; /* Muestra el botón cuando se hace scroll hacia abajo */
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia el color de fondo al pasar el cursor sobre él */
+}
+
