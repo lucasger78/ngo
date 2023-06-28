@@ -36,8 +36,53 @@
   .submenu a:hover {
     text-decoration: underline;
   }
-  
 
+  /* @media (max-width: 768px) {
+    .nav-item {
+      position: relative;
+    }
+  
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      background-color: #fff;
+      padding: 10px;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      transform: translateX(0);
+    }
+  
+    .nav-item:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(80%);
+    }
+  } */
+  @media (max-width: 768px) {
+    .nav-item {
+      position: relative;
+    }
+  
+    .submenu {
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      background-color: #fff;
+      padding: 10px;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      transform: translateX(0);
+    }
+  
+    .nav-item:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(80%);
+    }
+  }
 
   .text-footer{
     opacity: 0.1;
