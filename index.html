@@ -41,7 +41,24 @@ TemplateMo 567 Nomad Force
 
 https://templatemo.com/tm-567-nomad-force
 
--->
+--><!-- ========== WHATSAPP BUTTON ========== -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://walink.co/20fba1" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+<div class="fixed-action-btn">
+<a  target="_blank" class="btn btn-floating btn-lg">
+<!-- <i class="fab fa-whatsapp"></i> -->
+</a>
+<div class="slider">
+<div class="tab">
+<a href="https://wa.link/qkikwy" style="color: white;"><b data-section="btn-sup" data-value="whatsapp">Escribinos</b></a>
+</div>
+</div>
+</div>
+
+<!-- ========== END WHATSAPP BUTTON ========== -->
     </head>
     
     <body>
@@ -67,7 +84,7 @@ https://templatemo.com/tm-567-nomad-force
                     </video>
                 </div>
 
-                <div class="overlay"></div>
+                <!-- <div class="overlay"></div> -->
             </section>
 
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
@@ -423,7 +440,7 @@ https://templatemo.com/tm-567-nomad-force
 
                         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
                             <div class="news-thumb" data-aos="fade-up">
-                                <a href="news-detail.html" class="news-image-hover news-image-hover-warning">
+                                <!-- <a href="news-detail.html" class="news-image-hover news-image-hover-warning"> -->
                                     <img src="images/clientes/clientes-1.jpg" class="img-fluid large-news-image news-image" alt="">
                                 </a>
 
@@ -443,7 +460,7 @@ https://templatemo.com/tm-567-nomad-force
                             <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
                                 <div class="news-top w-100">
                                     
-                                    <a href="news-detail.html" class="news-image-hover news-image-hover-primary">
+                                    <!-- <a href="news-detail.html" class="news-image-hover news-image-hover-primary"> -->
                                         <img src="images/clientes/clientes-2.jpg" class="img-fluid news-image" alt="">
                                     </a>
 
@@ -559,17 +576,31 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
                 
                 <!-- End Clients -->
+                <!-- FORMULARIO DE CONTACTO -->
                 <section class=" contact section-padding" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="mb-5 text-center" data-aos="fade-up">Contacto</h2>
                             </div>
-                            
+                            <form class="form" action="https://formsubmit.co/info.lucasph@gmail.com" method="POST" >
+                                <div class="form__container">
+                                    <input type="text" name="name" class="form__input" placeholder="Nombre: ">
+                                    <input type="email" name="email" class="form__input" placeholder="Email: ">
+                                    <input type="text" name="name" class="form__input" placeholder="Empresa: ">
+                                    <input type="tel" name="tel" class="form__input" placeholder="Teléfono">
+                                    <textarea class="form__input form__input--message" type="text" name="subjet" placeholder="Dejanos tu Consulta"></textarea>
+
+                                    <input type="submit" value="Enviar" class="form__cta">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                                </div>
+                            </form>
                            
                         </div>
                     </div>
                 </section>
+                <!-- END FORMULARIO DE CONTACTO -->
             </section>
            
 
