@@ -10,3 +10,23 @@ window.addEventListener("scroll", function() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
   
+  //Preview servicios
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const masInfoButtons = document.querySelectorAll(".mas-info");
+  
+    for (let i = 0; i < masInfoButtons.length; i++) {
+      masInfoButtons[i].addEventListener("click", function() {
+        const targetId = this.getAttribute("data-target");
+        const targetElement = document.querySelector(targetId);
+  
+        if (targetElement) {
+          targetElement.style.display = "block";
+          this.parentNode.style.display = "none";
+        }
+      });
+    }
+  });
+
+  
+  
