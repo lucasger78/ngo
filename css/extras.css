@@ -1,0 +1,61 @@
+
+.gracias {
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .gracias {
+    height: 85vh;
+  }
+}
+
+.hero2 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .hero2 {
+      height: 85vh;
+    }
+}
+
+.social-icon-link3 {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    margin-right: 15px;
+  }
+  
+  .social-icon-link3:hover {
+    color: var(--primary-color);
+  }
+
+  .cv-texts {
+    color: white;
+    font-size: large;
+    padding-left: 15px;
+    
+  }
+
+  .cv-options{
+    align-items: center;
+    padding-left: 6.5rem;  
+}
+
+.text-btn{
+    color: white;
+}
+
+.text-btn:hover {
+    color: grey;
+  }
+
+  .cv-options2{
+    align-items: center;
+    padding-left: 7.5rem;  
+}

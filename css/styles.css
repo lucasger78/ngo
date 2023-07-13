@@ -1,3 +1,6 @@
+/* .video{
+  height: 1px;
+} */
 .img-index{
     width: 20%;
     height: 20%;
@@ -273,66 +276,9 @@ body {
   background-color: rgba(0, 0, 0, 0.4); /* Cambia el color de fondo al pasar el cursor sobre él */
 }
 
-/* FORMULARIO CONTACTO */
 
-/* .form{
-  background-color: #000000;
-  width: 90%;
-  margin: auto;
-  max-width: 410px;
-  border-radius: 1em;
-  padding: 3.5em 1.5em;
-  
-}
 
-.form__container{
-  width: 95;
-  display: grid;
-  gap: 1em;
-  grid-auto-columns: 95%;
-  justify-content: center;
 
-}
-
-.form__input{
-  font-size: 1rem;
-  padding: .8em 1em;
-  outline: #14638a;
-  border: #14638a;
-  border: 1px solid #14638a;
-  border-radius: 0.2em;
-  
-
-}
-
-.form__input--message{
-  resize: none;
-  padding: 1.8em 1em;
-  margin-bottom: .5em;
-  padding-top: 0.8em;
-}
-
-.form__cta{
-  font-size: 1rem;
-  background-color: #14638a;
-  color: #fff;
-  border: none;
-  font-weight: 300;
-  padding: .7em 0;
-  border-radius: .2em;
-  cursor: pointer;
-  font-weight: 500;
-
-}
-
-.logo-form {
-  width: 40%;
-  resize: none;
-  margin-left: 7em;
- 
-} */
-
-/* END FORMULARIO CONTACTO */
 
 
 /* WHATSAPP */
@@ -391,7 +337,7 @@ body {
     transition: all 0.3s ease;
     opacity: 0;
     white-space: nowrap;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
   
   .fixed-action-btn:hover .slider {
@@ -424,6 +370,96 @@ body {
 
 /* END WHATSAPP */ 
 
+/* TRABAJÁ CON NOSOTROS */
+
+.cv {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 105px;
+  left: 40px;
+  background-color: #1975b7;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.icon-cv {
+  margin-top: 13px;
+}
+
+.cv-icon:hover {
+  color: #9e9e9e;
+}
+
+.cv:hover {
+  color: #9e9e9e;
+}
+.fixed-action-btn-cv {
+  position: fixed;
+  bottom: 120px;
+  left: -5px;
+  z-index: 999;
+}
+
+.fixed-action-btn-cv .whatsapp-btn-cv {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.fixed-action-btn-cv:hover .whatsapp-btn-cv {
+  width: 100%;
+}
+
+.fixed-action-btn-cv .slider-cv {
+  position: absolute;         
+  bottom: 0;
+  left: 90px;
+  background-color: #1975b7;
+  color: #fff;
+  padding: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  white-space: nowrap;
+  /* text-transform: uppercase; */
+  
+}
+
+.fixed-action-btn-cv:hover .slider-cv {
+  opacity: 1;
+  left: 90px;
+}
+
+.tab-cv {
+  white-space: nowrap;
+}
+
+.btn-floating-cv {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-floating-cv i {
+  color: #fff;
+}
+
+.btn-lg-cv {
+  width: 64px;
+  height: 64px;
+  font-size: 24px;
+}
+
+/* END TRABAJÁ CON NOSOTROS */ 
+
+/* FORMULARIO CONTACTO */
 
 .form {
   background-color: #000000;
@@ -474,6 +510,7 @@ body {
   margin-left: 7em;
 }
 
+/*END FORMULARIO CONTACTO */
 .social-icon2 {
   margin: 0;
   padding: 0;
