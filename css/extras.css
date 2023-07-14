@@ -59,3 +59,27 @@
     align-items: center;
     padding-left: 7.5rem;  
 }
+
+@media only screen and (max-width: 767px) {
+  .contact-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .contact-info h6 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .contact-info ul {
+    width: 50%;
+    margin-bottom: 20px;
+    flex: 1 1 100%;
+    
+  }
+}
+
+
+
