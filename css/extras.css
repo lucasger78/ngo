@@ -91,6 +91,10 @@
   .footer-reached .fixed-action-btn-cv {
     display: none;
   }
+
+  .mail-link{
+    font-size: medium;
+  }
 }
 
 
