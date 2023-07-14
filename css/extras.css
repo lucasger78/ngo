@@ -81,5 +81,20 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .fixed-action-btn,
+  .fixed-action-btn-cv {
+    display: block;
+  }
+
+  .footer-reached .fixed-action-btn,
+  .footer-reached .fixed-action-btn-cv {
+    display: none;
+  }
+}
+
+
+
+
 
 

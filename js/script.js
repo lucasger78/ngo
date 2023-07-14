@@ -29,4 +29,29 @@ window.addEventListener("scroll", function() {
   });
 
   
+  // // Ocultamiento btn whatsapp y trabajá con nosotros en la version mobile cuando el scroll llega al footer
+  document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.querySelector('footer');
+    const whatsappButton = document.querySelector('.whatsapp');
+    const cvButton = document.querySelector('.cv');
+  
+    const checkPosition = function() {
+      const footerTop = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+  
+      if (footerTop < windowHeight) {
+        whatsappButton.style.display = 'none';
+        cvButton.style.display = 'none';
+      } else {
+        whatsappButton.style.display = 'block';
+        cvButton.style.display = 'block';
+      }
+    };
+  
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', checkPosition);
+  });
+  
+  
+  
   
